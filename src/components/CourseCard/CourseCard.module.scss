@@ -1,0 +1,30 @@
+.courseCard {
+    box-shadow: 0 10px 13px -4px #23235F30;
+    width: 393px;
+    // 1148px потому что ширина скролла 17px, а контрольная точка 1131px
+    @media screen and (max-width: 1148px) {
+        width: 253px;
+    }
+    // такая же логика, как в комментарии выше
+    @media screen and (max-width: 920px) {
+        width: 177px;
+    }
+    border-radius: 18px;
+
+    div {
+        height: 162px;
+        display: flex;
+        justify-content: center;
+        background-color: var(--black) ;
+        border-radius: 18px 18px 0 0;
+    }
+
+    h1 {
+        display: flex;
+        padding: 12px 18px 18px 18px;
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 18px;
+        text-align: left;
+    }
+}

@@ -1,0 +1,9 @@
+.content {
+  width: 100%;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  color: var(--black);
+}
+
+/*# sourceMappingURL=Content.module.css.map */
