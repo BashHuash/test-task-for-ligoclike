@@ -17,7 +17,10 @@ export const Sidebar: React.FC<sidebarProps> = memo( ( { tags, changeActiveTag }
     }
 
     const navItems = tags.map( item => <span key={ item }
-                                             onClick={ ( e ) => onChangeHandler( e.target.innerText ) }
+                                             onClick={ ( e ) => {
+                                                 const span = e.target as HTMLSpanElement
+                                                 return onChangeHandler( span.innerText )
+                                             } }
                                              className={ active === item ? s.active : undefined }>{ item }</span> )
 
     return <nav className={ s.sidebar }>

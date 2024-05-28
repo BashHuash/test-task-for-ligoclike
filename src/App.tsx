@@ -9,8 +9,7 @@ import { CoursesContext } from './CoursesContext';
 
 export const App: React.FC = () => {
     const [ data, setData ] = useState<contextType>( null )
-    console.log('Сделать адаптацию')
-    console.log('Выложить на гитхаб')
+
     useEffect( () => {
         coursesApi.getCourses().then( ( data ) => {
             setData( { courses: data, activeTag: 'Все темы' } )

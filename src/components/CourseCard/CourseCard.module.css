@@ -1,5 +1,6 @@
 .courseCard {
   box-shadow: 0 10px 13px -4px #23235F30;
+  height: min-content;
   width: 393px;
   border-radius: 18px;
 }
